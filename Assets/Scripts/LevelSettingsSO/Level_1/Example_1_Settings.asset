@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c63dd7a36f5cbe46a3cdd7a6b17c482, type: 3}
+  m_Name: Example_1_Settings
+  m_EditorClassIdentifier: 
+  rows: 10
+  cols: 12
+  blockPrefabs:
+  - {fileID: 4536659137886300046, guid: 16c839d0ea718564293ae7a066fd6945, type: 3}
+  - {fileID: 2450719942613936037, guid: 362f569b9d0c45440abf4a825c621d07, type: 3}
+  - {fileID: 8356450104538426888, guid: b7d7b346c8391b6439741bd2e168bbc3, type: 3}
+  - {fileID: 8485973991534458373, guid: eb8b33f1ada3f4346b34456c55e2c252, type: 3}
+  - {fileID: 3273969701244831903, guid: fc8dfa8f9ab95a14692c2feb204637f7, type: 3}
+  - {fileID: 7441683104285092125, guid: 80dd03de6af180d48be1dccb5d1e9f0a, type: 3}
+  defaultMaxIndex: 5
+  firstIconMinIndex: 5
+  secondIconMinIndex: 8
+  thirdMinIndex: 10
+  totalMoveCount: 45
