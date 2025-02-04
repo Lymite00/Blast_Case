@@ -15,9 +15,11 @@ public class Block : MonoBehaviour
     [Header("Components")] 
     [SerializeField] private SpriteRenderer currentSprite;
     [SerializeField] private List<Sprite> sprites = new List<Sprite>();
-
+    [SerializeField] private GameObject blastParticle;
+    
     [Header("References")] 
     private GridManager gridManager;
+    
     private void Awake()
     {
         currentSprite = GetComponentInChildren<SpriteRenderer>();
@@ -110,6 +112,7 @@ public class Block : MonoBehaviour
     private void OnBlastBlock()
     {
         // Could be implement animation or visual elements
+        Instantiate(blastParticle, transform.position, Quaternion.identity);
         GameManager.Instance.currentMoveCount--;
         CameraController.Instance.ShakeCamera();
         UIController.Instance.UpdateMoveCountText();

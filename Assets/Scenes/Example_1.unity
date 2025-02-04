@@ -275,6 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveCountText: {fileID: 0}
   warningText: {fileID: 0}
+  restartButton: {fileID: 0}
   gridManager: {fileID: 0}
 --- !u!1 &519420028
 GameObject:

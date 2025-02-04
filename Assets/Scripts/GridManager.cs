@@ -49,34 +49,6 @@ public class GridManager : MonoBehaviour
         block.FallToPosition(new Vector2(x, -y), 0.3f);
     }
 
-    private IEnumerator FallBlock(Block block, Vector2 targetPos)
-    {
-        if (block == null) yield break;
-
-        block.isFalling = true;
-        float duration = 0.25f;
-        float elapsed = 0f;
-        Vector2 startPos = block.transform.position;
-
-        while (elapsed < duration)
-        {
-            if (block == null) yield break;
-            block.transform.position = Vector2.Lerp(startPos, targetPos, elapsed / duration);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        if (block != null)
-        {
-            block.transform.position = targetPos;
-            block.isFalling = false; 
-        }
-
-        CheckForConnectedBlocks();
-        UpdateAllBlockSprites();
-    }
-
-
     public void RemoveBlocks(List<Block> blocks)
     {
         if (isProcessing) return;
